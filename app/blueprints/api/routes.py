@@ -1,4 +1,4 @@
-from flask import json, request, jsonify
+from flask import request, jsonify
 from . import bp as api
 from app.blueprints.blog.models import Post
 
