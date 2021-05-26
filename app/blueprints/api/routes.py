@@ -53,4 +53,4 @@ def delete_post(id):
     """
     post = Post.query.get(id)
     post.delete()
-    return jsonify([p.to_dict for p in Post.query.all()])
+    return jsonify([p.to_dict() for p in Post.query.all()])
