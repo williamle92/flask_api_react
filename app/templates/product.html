@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+
+
+{% block content %} 
+{% for i in product %}
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{ i.title}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ i.amount }}</h6>
+      <p class="card-text">{{ i.desc }}</p>
+      <a href="{{ url_for('product.product_detail', product_id = i.id )}}" class="card-link">Product Detail</a>
+      
+    </div>
+  </div>
+{% endfor %}
+{% endblock content %}
