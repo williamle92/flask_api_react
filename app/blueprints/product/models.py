@@ -1,4 +1,4 @@
-from enum import unique
+
 from app import db
 import os
 
@@ -17,5 +17,14 @@ class Products(db.Model):
 
     def __repr__(self):
         return f"<{self.title} {self.amount} {self.id}>"
+
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'title': self.title,
+            'description': self.description,
+            'amount' : self.amount
+        }
+
 
 
