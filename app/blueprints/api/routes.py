@@ -1,8 +1,7 @@
-from app.blueprints import product
+from .models import Products
 from flask import request, jsonify
 from . import bp as api
 from app.blueprints.blog.models import Post
-from app.blueprints.product.models import Products
 from .auth import token_auth
 
 
@@ -68,7 +67,7 @@ def delete_post(id):
 
 
 
-@api.route('/product', method=['GET'])
+@api.route('/product', methods=['GET'])
 def get_products():
     """
     [GET] /api/prod
@@ -78,9 +77,9 @@ def get_products():
 
 
 @api.route('/product/<int:id>', methods=['GET'])
-def get_post(id):
+def get_product(id):
     """
     [GET] /api/prods
     """
-    product = Post.query.get(id)
+    product = Products.query.get(id)
     return jsonify(product.to_dict())

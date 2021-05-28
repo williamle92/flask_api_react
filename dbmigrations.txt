@@ -1,0 +1,11 @@
+ps5 = Products('PS5', 'Experience lightning-fast loading with ultra-high speed SSD, deeper immersion', 500.00, 'https://images-na.ssl-images-amazon.com/images/I/619BkvKW35L._SL1500_.jpg')
+
+
+watch = Products('Tissot Chronograph' , 'A modern timepiece inspired by 1950s design', 499.95, 'https://www-stg-exo-ecom-m2.tissotwatches.com/media/catalog/product/cache/aaadd316e453df5b08f7f4246fad1a9c/T/0/T063.617.36.037.00.png')
+
+
+ipad = Products('iPad Pro', 'A powerful tablet that should have an OS but is limited by its iOS', 1099.99, 'https://images-na.ssl-images-amazon.com/images/I/81SGb5l%2BlZL._AC_SL1500_.jpg')
+
+
+flask = Products('Hydroflask', 'An indestructible flask that keeps your drinks cooler than your bestfriend', 60, 'https://images-na.ssl-images-amazon.com/images/I/61lvSW9Gm7L._AC_SX425_.jpg')
+
